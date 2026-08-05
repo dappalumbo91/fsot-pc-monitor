@@ -1,0 +1,25 @@
+/target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# Local binaries and run artifacts
+*.exe
+*.pdb
+*.dll
+logs/
+exports/
+smoke_*.txt
+hardware_probe.txt
+
+# Plant listener outputs
+tools/plant_latest.json
+tools/plant_metric.fsmt
+tools/plant_metric.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

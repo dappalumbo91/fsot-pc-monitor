@@ -1,0 +1,27 @@
+[package]
+name = "fsot-pc-monitor"
+version = "0.4.0"
+edition = "2021"
+description = "FSOT host-plant PC monitor (plant_host_v1) with performance HUD"
+license = "Apache-2.0"
+authors = ["Damian Arthur Palumbo"]
+repository = "https://github.com/dappalumbo91/fsot-pc-monitor"
+readme = "README.md"
+keywords = ["fsot", "monitor", "telemetry", "hardware", "windows"]
+categories = ["science", "visualization"]
+
+[dependencies]
+sysinfo = "0.30"
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+eframe = { version = "0.31", default-features = true }
+egui = "0.31"
+egui_plot = "0.31"
+sha2 = "0.10"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true
