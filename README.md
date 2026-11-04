@@ -1,5 +1,9 @@
 # FSOT PC Monitor
 
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
+Build pin **D1D38A** is retained for this build; current theory authority is [FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean) pin **AEB2AD** (`vendor/fsot_compute.py`).
+
 PC host-plant instrument under pin **D1D38A**, fold **`plant_host_v1`**, with a performance HUD.
 
 **One law, many folds** — same FSOT scalar spine as neuron-zig and the rest of your stack; this fold is your machine’s live sensors.
