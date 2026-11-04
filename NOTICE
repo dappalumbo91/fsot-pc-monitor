@@ -1,0 +1,16 @@
+fsot-pc-monitor
+Copyright 2026 Damian Arthur Palumbo
+
+This product is the FSOT host-plant PC monitor (fold plant_host_v1):
+low-overhead hardware telemetry plus scalar/trit science. The instrument
+fold is pinned at D1D38A (seeds match fsot-neuron-zig) as documented in
+README.md and BRIDGE.md.
+
+This repository is part of the FSOT (Fluid Spacetime Omni-Theory) family.
+Theory authority is vendor/fsot_compute.py in
+https://github.com/dappalumbo91/FSOT-2.1-Lean (pin AEB2AD), also by
+Damian Arthur Palumbo and licensed under the Apache License 2.0.
+
+Rust crate dependencies (not bundled, fetched by Cargo; see Cargo.toml):
+sysinfo (MIT), chrono, serde, serde_json, eframe, egui, egui_plot and
+sha2 (each MIT OR Apache-2.0).
